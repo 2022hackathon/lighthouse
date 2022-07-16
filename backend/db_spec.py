@@ -5,6 +5,11 @@ from bson import ObjectId
 from pydantic import BaseModel, EmailStr, Field
 
 
+class UserCredentialsInDB(BaseModel):
+    email: str
+    hashed_password: str
+    id: Optional[str] = Field(alias="_id", default=None)
+
 class TokenInDB(BaseModel):
     token: str
     createdAt: datetime.datetime = None

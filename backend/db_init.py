@@ -48,3 +48,12 @@ class DBSession():
         t = self.find_one(Collections.tokens, {"token": token})
         return exists(t)
             
+
+
+##
+def connect_db() -> DBSession:
+    db = DBSession()
+    try:
+        yield db
+    finally:
+        db.close_connection()

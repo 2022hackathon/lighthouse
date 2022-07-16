@@ -1,3 +1,5 @@
+from fastapi import Depends, FastAPI, Query
+
 origins=["*"]
 
 app = FastAPI()

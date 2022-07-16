@@ -46,13 +46,13 @@ class DBSession():
     def get_user(self, email: str):
         user = self.db.users.find_one({"email": email})
         if exists(user):
-            return self.user_to_class(user)
+            return user
 
     def get_user_by_id(self, u_id: str):
         validate_id(u_id)
         user = self.db.users.find_one({"_id": ObjectId(u_id)})
         if exists(user):
-            return self.user_to_class(user)
+            return user
 
     def insert_user(self, user_dict: dict):
         del user_dict['id']

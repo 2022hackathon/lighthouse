@@ -1,8 +1,11 @@
 import React from 'react'
+import facebooklogin from '../images/facebooklogin.png'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div>
+      <img src={facebooklogin} alt="facebook login" /> 
+    </div>
   )
 }
 

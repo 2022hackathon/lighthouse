@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.Login {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.LoginImage {
+  width: 20%;
+  padding-left: 20%;
+}
+
+form {
+  width: 100%;
+}
+
+.loginBox {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+}
+
+.signUpSubmit {
+  margin: 25px 0 15px 0;
+}
+
+.pwStrRow {
+  width: 63%;
+  text-align: left;
+  margin: auto;
+  padding: 0;
+  font-size: 12px;
+}
+
+.pwStrWeak {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+.pwStrStrong {
+  display: inline-block;
+  position: relative;
+  left: 77%;
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+@media screen and (max-width: 550px) {
+  .loginBox {
+    width: 85%;
+  }
+}
+
+.InputForm {
+  display: flex;
+  justify-content: center;
 }

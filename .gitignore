@@ -5,6 +5,11 @@ venv
 .DS_Store
 
 
+frontend/venv
+backend/venv
+
+
+
 #front end stuff
 # dependencies
 frontend/node_modules

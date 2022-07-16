@@ -1,24 +1,50 @@
-from flask import Flask
-from pymongo import MongoClient
-import json
+from fastapi import Depends, FastAPI, Query
+from fastapi.security import OAuth2PasswordRequestForm
 
-app = Flask(__name__)
+from security import *
+from users import *
+origins=["*"]
 
-mongoClient = MongoClient('mongodb://127.0.0.1:27017')
-db = mongoClient.get_database('fremp_test_app1_db')
-col = db.get_collection('fremp_test_app1_col')
+app = FastAPI()
 
-# $ mongo
-# $ use fremp_test_app1_db
-# $ db.fremp_test_app1_col.insertOne({'data': 'Hello World from MongoDB'})
+from fastapi.middleware.cors import CORSMiddleware
 
-@app.route('/api/get/')
-def getdata():
-    data = ''
-    if col.find({}):
-        for data in col.find({}):
-            data = data['data']
-    return {'data': data}
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
-if __name__ == "__main__":
-    app.run()
+@app.get("/")
+async def root():
+    return {"message": "root"}
+
+@app.post("/login", response_model=Token)
+@app.post("/token", response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    '''
+    /login and /token are the same endpoint
+    username == email for our purposes (OAuth spec requires it be called username)
+
+    Pass tokens in the Authorization header as: \'Authorization: Bearer {access_token}\'
+    '''
+    user = authenticate_user(form_data.username, form_data.password)
+    if not user:
+        raise credentials_exception("Incorrect email or password")
+
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    # from JWT spec "sub" is the subject of the token
+    access_token = create_access_token(
+        data={"sub": user.id}, expires_delta=access_token_expires
+    )
+    return {"access_token": access_token, "token_type": "bearer"}
+
+@app.post("/signup", response_model=CreateSuccess)
+async def signup(res = Depends(create_user)):
+    return (res)
+    
+@app.post("/logout")
+async def logout(res: str = Depends(invalidate_token)):
+    return res

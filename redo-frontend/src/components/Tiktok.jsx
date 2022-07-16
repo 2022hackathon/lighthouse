@@ -1,0 +1,11 @@
+import React from 'react'
+
+const Tiktok = () => {
+  return (
+    <div>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@otis_thelab/video/7079513184146607365" data-video-id="7079513184146607365" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@otis_thelab" href="https://www.tiktok.com/@otis_thelab">@otis_thelab</a> Getting more sassy by the day <a title="dogs" target="_blank" href="https://www.tiktok.com/tag/dogs">#dogs</a> <a title="dogsofttiktok" target="_blank" href="https://www.tiktok.com/tag/dogsofttiktok">#dogsofttiktok</a> <a title="justababy" target="_blank" href="https://www.tiktok.com/tag/justababy">#justababy</a> <a title="puppiesoftiktok" target="_blank" href="https://www.tiktok.com/tag/puppiesoftiktok">#puppiesoftiktok</a> <a title="labradorpuppy" target="_blank" href="https://www.tiktok.com/tag/labradorpuppy">#labradorpuppy</a> <a title="labrador" target="_blank" href="https://www.tiktok.com/tag/labrador">#labrador</a> <a title="dog" target="_blank" href="https://www.tiktok.com/tag/dog">#dog</a> <a title="puppytiktok" target="_blank" href="https://www.tiktok.com/tag/puppytiktok">#puppytiktok</a> <a title="puppies" target="_blank" href="https://www.tiktok.com/tag/puppies">#puppies</a> <a title="puppy" target="_blank" href="https://www.tiktok.com/tag/puppy">#puppy</a> <a title="chomp" target="_blank" href="https://www.tiktok.com/tag/chomp">#chomp</a> <a title="chomper" target="_blank" href="https://www.tiktok.com/tag/chomper">#chomper</a> <a title="sassy" target="_blank" href="https://www.tiktok.com/tag/sassy">#sassy</a> <a title="sassydog" target="_blank" href="https://www.tiktok.com/tag/sassydog">#sassydog</a> <a title="chomping" target="_blank" href="https://www.tiktok.com/tag/chomping">#chomping</a> <a target="_blank" title="♬ original sound - Otis the lab 🐕" href="https://www.tiktok.com/music/original-sound-7079513174609480454">♬ original sound - Otis the lab 🐕</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+  )
+}
+
+export default Tiktok

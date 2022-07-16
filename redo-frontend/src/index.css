@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.LoginContainer {
+ display: flex;
+ margin: auto;
+}
+
+.LoginImage {
+  width: 60%;
+  margin-left: 30%;
+}
+
+.Logo {
+  width: 5em;
+  margin-right: 10px;
+}
+
+.Header {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+span {
+  width: 100%;
+}
+
+.settings {
+  height: 2.5em;
+  margin-right: 20px;
+}
+
+.MainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.tile {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.tile:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.setting-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 120px;
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlighted {
+  font-size: 40px;
+  color: rgba(255, 94, 91, 1);
+  background-color: rgba(255, 239, 239, 1);
+}
+
+.setting-page > Typography {
+  padding-left: 20px;
+}
+
+.LoginPrompt {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.LoginBlock {
+  margin: 0px;
+  padding: 0px;
+}
+
+.LoginButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 48%;
+}
+
+.inputBox {
+  border-color: rgba(255, 94, 91, 1);
+  width: 100%;
+  padding: 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

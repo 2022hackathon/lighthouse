@@ -8,6 +8,7 @@ import {
   import Signup from './pages/Signup';
   import Login_ from './pages/Login_';
   import Main_ from './pages/Main_';
+  import Warning from './pages/Warning';
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
         <Route
           path="/main_"
           element={<Main_ />}
+        />
+        <Route
+          path="/warning"
+          element={<Warning />}
         />
       </Routes>
     </BrowserRouter>

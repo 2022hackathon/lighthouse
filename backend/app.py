@@ -44,3 +44,7 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
 @app.post("/signup", response_model=CreateSuccess)
 async def signup(res = Depends(create_user)):
     return (res)
+    
+@app.post("/logout")
+async def logout(res: str = Depends(invalidate_token)):
+    return res

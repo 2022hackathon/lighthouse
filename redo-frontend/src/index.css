@@ -2,12 +2,12 @@
 
 .LoginContainer {
  display: flex;
- justify-items: center;
- width: 100%;
+ margin: auto;
 }
 
 .LoginImage {
   width: 60%;
+  margin-left: 30%;
 }
 
 .Logo {
@@ -65,3 +65,47 @@ span {
   cursor: pointer;
 }
 
+.setting-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 120px;
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlighted {
+  font-size: 40px;
+  color: rgba(255, 94, 91, 1);
+  background-color: rgba(255, 239, 239, 1);
+}
+
+.setting-page > Typography {
+  padding-left: 20px;
+}
+
+.LoginPrompt {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.LoginBlock {
+  margin: 0px;
+  padding: 0px;
+}
+
+.LoginButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 48%;
+}

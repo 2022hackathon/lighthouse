@@ -3,7 +3,6 @@ import {Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 
@@ -43,7 +42,7 @@ import Container from '@mui/material/Container';
     </div>
     <Link to="/">
         <div>
-          <Button variant="contained" size = "medium" color="primary" onClick ={() => {getSignUpData();}}>
+          <Button variant="contained" size = "medium" color="secondary" onClick ={() => {getSignUpData();}}>
             Sign Up!
           </Button>
         </div>
@@ -63,7 +62,6 @@ import Container from '@mui/material/Container';
     const last_name1 = document.getElementById('last-name').value;
     console.log(last_name1);
     const photo = document.getElementById('profile-photo').value;
-    //console.log(first_name1);
     const phone1 = document.getElementById('phone').value;
     console.log(phone1);
     const email1 = document.getElementById('email').value;

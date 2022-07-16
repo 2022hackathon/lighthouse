@@ -24,7 +24,7 @@ optional_oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token", auto_error=False
 
 class TokenInDB(BaseModel):
     token: str
-    createdAt: datetime.datetime = None
+    createdAt: datetime = None
     email: Optional[EmailStr] = None
 
 def verify_password(plain_password, hashed_password):

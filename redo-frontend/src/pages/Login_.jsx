@@ -1,6 +1,6 @@
 import React from 'react'
 import image from '../images/animation.gif'
-import LogInPage from '../components/LogInPage'
+import LogInPage from '../components/LogInPage_'
 import Header from '../components/Header'
 import loginprompt from '../images/login.png'
 

@@ -29,14 +29,14 @@ function App() {
           path="/settings"
           element={<Settings />}
         />
-        {/* <Route
+        <Route
           path="/login_"
           element={<Login_ />}
         />
         <Route
           path="/main_"
           element={<Main_ />}
-        /> */}
+        />
       </Routes>
     </BrowserRouter>
   );

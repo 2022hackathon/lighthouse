@@ -32,12 +32,7 @@ const Main = () => {
         <a target="popup" href="https://www.instagram.com/p/CgDk_-nIm3b/?igshid=YmMyMTA2M2Y="><img className="tile" src={tile2} alt="tile" /> </a>
         <a target="popup" href="https://www.instagram.com/p/CgBNMCMosQ9/?igshid=YmMyMTA2M2Y="><img className="tile" src={tile3} alt="tile" /> </a>
         <a target="popup" href="https://www.linkedin.com/posts/unsw_australia-activity-6953206774967529472-lamv?utm_source=linkedin_share&utm_medium=ios_app"><img className="tile" src={tile4} alt="tile" /> </a>        
-        <img className="tile" src={tile5} alt="tile" />
-        <img className="tile" src={tile6} alt="tile" />
-        <img className="tile" src={tile7} alt="tile" />
-        <img className="tile" src={tile8} alt="tile" />
-        <img className="tile" src={tile9} alt="tile" />
-        <img className="tile" src={tile10} alt="tile" />
+        
 
       </Masonry>
     </div>

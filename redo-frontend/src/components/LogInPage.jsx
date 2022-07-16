@@ -41,9 +41,11 @@ return (
     <TextField id="login-password" label="Password" variant="outlined" type = "password"/>
 
     <div>
+    <Link to="/main">
           <Button variant="contained" size = "medium" color="primary" onClick ={() => {getLogInData();}} >
           Log In
           </Button>
+          </Link>
     </div>
         <div></div>
     <div>

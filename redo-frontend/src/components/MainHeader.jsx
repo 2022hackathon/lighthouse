@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './Header'
-import welcome from '../images/welcome.png'
 import settings from '../images/settings.png'
+import {Link, useNavigate} from "react-router-dom";
 
 const MainHeader = () => {
   return (
-    <div>
+    <div className="MainHeader">
         <Header />
-        <img className="settings" src={settings} alt="settings"/>
+        <Link to="/settings"><img className="settings" src={settings} alt="settings"/></Link>
     </div>
   )
 }

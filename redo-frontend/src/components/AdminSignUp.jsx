@@ -15,7 +15,7 @@ import Container from '@mui/material/Container';
     <Box
         component="form"
         sx={{
-        '& > :not(style)': { m: 1, width: '40ch' },
+        '& > :not(style)': { m: 0, width: '40ch' },
         }}
         noValidate
         autoComplete="off"
@@ -40,13 +40,14 @@ import Container from '@mui/material/Container';
         type = "password"
         //color = {passwordMatch()}
         label="Confirm Password" />
-    <Link to="/login">
-        <Button variant="contained" size = "medium" color="primary" onClick ={() => {getSignUpData();}}>
-        Sign Up!
-        </Button>
-    </Link>
     </div>
-    
+    <Link to="/">
+        <div>
+          <Button variant="contained" size = "medium" color="primary" onClick ={() => {getSignUpData();}}>
+            Sign Up!
+          </Button>
+        </div>
+    </Link>
     </Box>
     </Container>
     );

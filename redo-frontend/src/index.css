@@ -1,6 +1,7 @@
-.Login {
-  display: flex;
-  justify-items: flex-start;
+.LoginContainer {
+ display: flex;
+ justify-items: center;
+ width: 100%;
 }
 
 .LoginImage {
@@ -9,6 +10,7 @@
 
 .Logo {
   width: 5em;
+  margin-right: 10px;
 }
 
 .Header {
@@ -16,4 +18,8 @@
   justify-items: center;
   align-items: center;
   margin-top: 1em;
+}
+
+span {
+  width: 100%;
 }

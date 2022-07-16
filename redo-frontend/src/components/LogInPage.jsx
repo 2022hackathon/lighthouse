@@ -44,9 +44,9 @@ return (
           <Button variant="contained" size = "medium" color="primary" onClick ={() => {getLogInData();}} >
           Log In
           </Button>
-        </div>
+    </div>
         <div></div>
-        <div>
+    <div>
         <Link to="/sign-up">
             <Button variant="outlined" size = "small" color="primary">
                 New User Sign Up

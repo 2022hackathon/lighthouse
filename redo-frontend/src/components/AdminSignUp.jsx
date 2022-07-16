@@ -42,7 +42,7 @@ import Container from '@mui/material/Container';
     </div>
     <Link to="/">
         <div>
-          <Button variant="contained" size = "medium" color="secondary" onClick ={() => {getSignUpData();}}>
+          <Button variant="contained" size = "medium" color="secondary" onClick={() => alert("Account Created")}>
             Sign Up!
           </Button>
         </div>

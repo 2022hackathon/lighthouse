@@ -39,14 +39,14 @@ return (
     <TextField id="login-email" label="Email" variant="outlined" />
     <TextField id="login-password" label="Password" variant="outlined" type = "password"/>
     <div className="LoginButtons">
-      <Link to="/main">
+      <Link to="/setupsocials">
         <Button variant="contained" size = "medium" color="secondary" onClick ={() => {getLogInData();}} >
           Log In
         </Button>
       </Link>
         
       <Link to="/sign-up">
-        <Button variant="outlined" size = "medium" color="secondary">
+        <Button variant="outlined" size = "medium" color="secondary" onClick={() => alert("Account Created")}>
           Sign Up
         </Button>
       </Link>

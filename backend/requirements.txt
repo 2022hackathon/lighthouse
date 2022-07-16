@@ -1,2 +1,13 @@
 flask
-pymongo
+pymongo==4.1.1
+email-validator==1.2.1
+fastapi==0.78.0
+python-jose==3.3.0
+requests==2.28.0
+ujson==5.3.0
+urllib3==1.26.9
+uvicorn==0.17.6
+uvloop==0.16.0
+passlib==1.7.4
+python-multipart==0.0.5
+bcrypt==3.2.2

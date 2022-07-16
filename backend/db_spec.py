@@ -5,10 +5,13 @@ from bson import ObjectId
 from pydantic import BaseModel, EmailStr, Field
 
 
-class UserCredentialsInDB(BaseModel):
+class UserInDB(BaseModel):
     email: str
     hashed_password: str
     id: Optional[str] = Field(alias="_id", default=None)
+
+class Token(BaseModel):
+    access_token: str
 
 class TokenInDB(BaseModel):
     token: str
@@ -23,3 +26,6 @@ class UpdatePassword(BaseModel):
     old_psw: str
     new_psw1: str
     new_psw2: str
+
+class CreateSuccess(BaseModel):
+    id: str

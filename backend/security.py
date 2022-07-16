@@ -10,6 +10,7 @@ from contextlib import contextmanager
 from exceptions import *
 from db_init import *
 from db_spec import *
+
 # generated using openssl rand -hex 32 (don't change)
 SECRET_KEY = "3dd7787242e5758064d13b19337fefac19f56a937f941768e7ed29eccdeb34f4"
 ALGORITHM = "HS256"
@@ -70,3 +71,12 @@ def check_token(token: str):
 
 async def validate_token(token: str = Depends(oauth2_scheme)):
     return check_token(token)
+
+def authenticate_user(email: str, password: str) -> UserInDB:
+    with contextmanager(connect_db)() as db:
+        user = db.get_user(email)
+
+    if not exists(user) or not verify_password(password, user.hashed_password):
+        return False
+
+    return UserInDB(email=user.email, hashed_password=user.hashed_password, _id=user.id)

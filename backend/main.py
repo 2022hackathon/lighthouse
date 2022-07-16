@@ -1,5 +1,8 @@
 from fastapi import Depends, FastAPI, Query
+from fastapi.security import OAuth2PasswordRequestForm
 
+from security import *
+from users import *
 origins=["*"]
 
 app = FastAPI()
@@ -38,9 +41,6 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     )
     return {"access_token": access_token, "token_type": "bearer"}
 
-@app.post("/signup/consumer", response_model=CreateSuccess)
-async def signup_consumer(res = Depends(create_consumer)):
-    """
-    photo is base64 encoded
-    """
+@app.post("/signup", response_model=CreateSuccess)
+async def signup(res = Depends(create_user)):
     return (res)

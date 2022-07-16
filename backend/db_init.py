@@ -3,6 +3,8 @@ from enum import Enum
 from bson import ObjectId
 from exceptions import bad_request_exception
 import datetime as dt
+from typing import List
+
 
 class Collections(str, Enum):
     users = "users"
@@ -18,10 +20,27 @@ class DBSession():
     def __init__(self):
         CONNECTION_STRING = "mongodb+srv://user:uuuuuu@cluster0.flp6hrp.mongodb.net/?retryWrites=true&w=majority"
         self.client = MongoClient(CONNECTION_STRING)
-        self.db = self.client.car_rental_service
+        self.db = self.client.simple_better
 
     def close_connection(self):
         self.client.close()
+
+
+    def find(self, collection: Collections, q: dict):
+        return self.db.get_collection(collection).find(q)
+
+    def find_one(self, collection: Collections, q: dict):
+        return self.db.get_collection(collection).find_one(q)
+
+    def update_one(self, collection: Collections, f: dict, new_values: dict):
+        return self.db.get_collection(collection).update_one(f, new_values)
+
+    def delete_one(self, collection: Collections, q: dict):
+        return self.db.get_collection(collection).delete_one(q)
+
+    def aggregate(self, collection: Collections, q: List):
+        return self.db.get_collection(collection).aggregate(q)
+
 
     # Common queries
     def get_user(self, email: str):

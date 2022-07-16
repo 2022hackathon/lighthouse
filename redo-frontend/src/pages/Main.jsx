@@ -8,6 +8,7 @@ import tile4 from '../images/olli.png'
 import tile5 from '../images/cseUNSWFMAA.png'
 import tile6 from '../images/linkedinfriend.png'
 import tile7 from '../images/nswcovid.png'
+import scientia from '../images/scientia.png'
 
 const breakpointColumnsObj = {
   default: 4,
@@ -27,8 +28,9 @@ const Main = () => {
         <img className="tile" src={tile3} alt="tile" />
         <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/pinterest/official-news/"></a>
         <img className="tile" src={tile2} alt="tile" />
+        <iframe height="200px" src="https://www.youtube.com/embed/HeldH4AvkRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img className="tile" src={tile} alt="tile" />
-        <img className="tile" src={tile2} alt="tile" />
+        <img className="tile" src={scientia} alt="tile" />
         <a target="popup" href="https://www.instagram.com/p/CfvuJkzra3S/?igshid=YmMyMTA2M2Y="><img className="tile" src={tile4} alt="tile" /></a>
         <img className="tile" src={tile4} alt="tile" />
         <a target="popup" href="https://www.instagram.com/p/CfvuJkzra3S/?igshid=YmMyMTA2M2Y="><img className="tile" src={tile5} alt="tile" /> </a>

@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+h1 {
+  font-family: 'Dosis';
+  font-size: 2.3rem;
+  color: #767676;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
 
 .LoginContainer {
  display: flex;
@@ -6,13 +15,13 @@
 }
 
 .LoginImage {
-  width: 60%;
-  margin-left: 30%;
+  width: 52%;
+  margin-left: 36%;
   border-radius: 20px;
 }
 
 .Logo {
-  width: 5em;
+  width: 4em;
   margin-right: 10px;
 }
 
@@ -20,7 +29,7 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  margin-top: 1em;
+  margin: 1em;
 }
 
 span {
@@ -97,7 +106,6 @@ span {
   width: 50%;
   margin-bottom: 20px;
   margin-left: 20px;
-  margin-top: 20px;
 }
 
 .LoginBlock {

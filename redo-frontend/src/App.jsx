@@ -6,7 +6,7 @@ import {
   import Main from './pages/Main';
   import Settings from './pages/Settings';
   import Signup from './pages/Signup';
-
+  import SetUpSocials from './pages/SetUpSocials';
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +26,10 @@ function App() {
         <Route
           path="/settings"
           element={<Settings />}
+        />
+        <Route
+          path="/setupsocials"
+          element={<SetUpSocials />}
         />
       </Routes>
     </BrowserRouter>

@@ -41,7 +41,7 @@ const Settings = () => {
           <input className="inputBox" type="text" />
         </div>
           
-        <Button variant="outlined" size = "small" color="primary">
+        <Button variant="outlined" size = "small" color="secondary">
            SAVE
         </Button>
       </div>

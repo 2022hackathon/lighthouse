@@ -1,6 +1,6 @@
 import React from 'react'
 import AdminSignUp from '../components/AdminSignUp'
-import image from '../images/card.png'
+import image from '../images/animation.gif'
 import Header from '../components/Header'
 import prompt from '../images/prompt.png'
 
@@ -10,7 +10,7 @@ const Signup = () => {
       <Header />
       <div className="LoginContainer">
         <span><img className="LoginImage" src={image} alt="card" /> </span>
-        <span> <img className="LoginImage" src={prompt} alt="card" /><AdminSignUp /></span>
+        <span> <img className="LoginPrompt" src={prompt} alt="card" /><AdminSignUp /></span>
       </div>
     </div>
     

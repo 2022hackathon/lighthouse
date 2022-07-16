@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/card.png'
+import image from '../images/animation.gif'
 import LogInPage from '../components/LogInPage'
 import Header from '../components/Header'
 import loginprompt from '../images/login.png'

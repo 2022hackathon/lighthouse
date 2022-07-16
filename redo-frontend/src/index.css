@@ -1,0 +1,19 @@
+.Login {
+  display: flex;
+  justify-items: flex-start;
+}
+
+.LoginImage {
+  width: 60%;
+}
+
+.Logo {
+  width: 5em;
+}
+
+.Header {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em;
+}

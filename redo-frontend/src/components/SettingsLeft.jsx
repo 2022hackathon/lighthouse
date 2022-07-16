@@ -36,9 +36,6 @@ const SettingsLeft = () => {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
 
         <img src={changepwbutton} alt="change password" />
 
@@ -46,7 +43,10 @@ const SettingsLeft = () => {
         <br />
         <br />
 
-        <img src={logoutbutton} alt="change password"/>
+        
+        {/* <a target="popup" href="https://127.0.0.1:3000/login_"><img className="tile" src={} alt="tile" /> </a> */}
+
+        <img src={logoutbutton} alt="log out"/>
 
 
     </div>

@@ -12,8 +12,8 @@
 }
 
 .Logo {
-  width: 5em;
-  margin-right: 10px;
+  width: 8em;
+  margin-right: -50px;
 }
 
 .Header {
@@ -21,6 +21,7 @@
   justify-items: center;
   align-items: center;
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 span {
@@ -124,7 +125,7 @@ span {
 .settingMain {
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
+  margin-left: 70px;
 }
 
 .settingFontSize {
@@ -155,7 +156,21 @@ span {
 }
 
 .lighthouse {
-  margin-right: 200px;
+  margin-right: 100px;
   max-width: 500px;
   max-height: 1000px;
+}
+
+.settingBox {
+  margin-left: -340px;
+}
+
+.newuserimage {
+  margin-left: 15px;
+  height: 65px;
+  width: 430px;
+}
+
+.newuser {
+  margin-left: 15px;
 }

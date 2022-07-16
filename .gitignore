@@ -4,6 +4,8 @@ __pycache__
 venv
 .DS_Store
 
+frontend/venv
+backend/venv
 
 #front end stuff
 # dependencies

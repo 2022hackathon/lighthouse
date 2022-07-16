@@ -31,6 +31,15 @@ const Settings = () => {
         <div>
           Prioritise posts/feeds if it includes:
         </div>
+        <div>
+          <input className="inputBox" type="text" />
+        </div>
+        <div>
+          Filter posts/feeds if it includes:
+        </div>
+        <div>
+          <input className="inputBox" type="text" />
+        </div>
           
         <Button variant="outlined" size = "small" color="primary">
            SAVE

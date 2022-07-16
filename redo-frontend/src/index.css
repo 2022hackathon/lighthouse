@@ -94,7 +94,9 @@ span {
 
 .LoginPrompt {
   width: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .LoginBlock {
@@ -108,4 +110,12 @@ span {
   align-items: center;
   margin-top: 10px;
   width: 48%;
+}
+
+.inputBox {
+  border-color: rgba(255, 94, 91, 1);
+  width: 100%;
+  padding: 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

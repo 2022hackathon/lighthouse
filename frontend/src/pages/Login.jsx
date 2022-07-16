@@ -1,14 +1,14 @@
 import React from 'react'
 import image from '../images/card.png'
+import LogInPage from '../components/LogInPage'
+import Logo from '../images/logo.png'
 
 const Login = () => {
   return (
     <div className="Login">
-      <img className="LoginImage" src={image} alt="card" /> 
-      <button class="btn btn-primary">Button</button>
-      <h1 className="text-3xl font-bold underline">
-      Log into your account! 
-    </h1>
+      <h1>Simpler</h1>
+      <span><img className="LoginImage" src={image} alt="card" /> </span>
+      <span><LogInPage /></span>
     </div>
   )
 }

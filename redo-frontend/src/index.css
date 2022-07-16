@@ -116,7 +116,46 @@ span {
 .inputBox {
   border-color: rgba(255, 94, 91, 1);
   width: 100%;
-  padding: 20px;
+  padding: 35px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+.settingMain {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.settingFontSize {
+  font-size: 30px;
+}
+
+.socialMediaImage {
+  width: 600px;
+  height: 90px;
+}
+
+.socialMediaDropDownMenu {
+  font-size: 20px;
+  height: 35px;
+}
+
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.lighthouse {
+  margin-right: 200px;
+  max-width: 500px;
+  max-height: 1000px;
 }

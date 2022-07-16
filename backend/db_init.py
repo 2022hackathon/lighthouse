@@ -5,7 +5,7 @@ from exceptions import bad_request_exception
 import datetime as dt
 from typing import List
 
-
+from db_spec import *
 class Collections(str, Enum):
     users = "users"
 
@@ -43,16 +43,20 @@ class DBSession():
 
 
     # Common queries
+    def user_to_class(self, user: dict):
+        user["_id"] = str(user["_id"])
+        return UserInDB(**user)
+
     def get_user(self, email: str):
         user = self.db.users.find_one({"email": email})
         if exists(user):
-            return user
+            return self.user_to_class(user)
 
     def get_user_by_id(self, u_id: str):
         validate_id(u_id)
         user = self.db.users.find_one({"_id": ObjectId(u_id)})
         if exists(user):
-            return user
+            return self.user_to_class(user)
 
     def insert_user(self, user_dict: dict):
         del user_dict['id']

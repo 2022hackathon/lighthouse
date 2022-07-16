@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from enum import Enum
 from typing import Optional, List, Union
 from bson import ObjectId
@@ -15,7 +15,7 @@ class Token(BaseModel):
 
 class TokenInDB(BaseModel):
     token: str
-    createdAt: datetime.datetime = None
+    createdAt: datetime = None
     email: Optional[EmailStr] = None
 
 class CreateUser(BaseModel):

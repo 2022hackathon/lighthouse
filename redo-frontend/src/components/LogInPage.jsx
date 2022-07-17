@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
+import NewUserButton from '../images/newuserbutton.png'
+
 function LogInPage (props) {
   let navigate = useNavigate();
 
@@ -32,28 +34,55 @@ function LogInPage (props) {
       }).catch(err => console.log(err));
   }
 return (
-    <Container maxWidth="sm">
-    <Box component="form"
-    noValidate
-    autoComplete="off">
-    <TextField id="login-email" label="Email" variant="outlined" />
-    <TextField id="login-password" label="Password" variant="outlined" type = "password"/>
-    <div className="LoginButtons">
-      <Link to="/setupsocials">
-        <Button variant="contained" size = "medium" color="secondary" onClick ={() => {getLogInData();}} >
-          Log In
-        </Button>
-      </Link>
-        
-      <Link to="/sign-up">
-        <Button variant="outlined" size = "medium" color="secondary" onClick={() => alert("Account Created")}>
-          Sign Up
-        </Button>
-      </Link>
-    </div>
+    <div>
+      <Container maxWidth="sm">
+      <Box component="form"
+      noValidate
+      autoComplete="off">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div className="settingBox">
+        <TextField id="login-email" label="Email" variant="outlined" />
+        <TextField id="login-password" label="Password" variant="outlined" type = "password"/>
+        <div className="LoginButtons">
+          <Link to="/main">
+            <Button variant="contained" size = "medium" color="secondary" onClick ={() => {getLogInData();}} >
+              Log In
+            </Button>
+          </Link>
+            
+        </div>
+      </div>
+      
+      </Box>
+      </Container>
 
-    </Box>
-    </Container>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <img src={NewUserButton} alt="logo" className="newuser"/>
+
+      <br/>
+      <br/>
+
+      <div className="newuser">
+        <Link to="/sign-up">
+          <Button variant="contained" size = "medium" color="secondary">
+            Sign Up
+          </Button>
+        </Link>
+      </div>
+      
+
+    </div>
+    
+
   );
 
 }

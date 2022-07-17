@@ -6,7 +6,10 @@ import {
   import Main from './pages/Main';
   import Settings from './pages/Settings';
   import Signup from './pages/Signup';
-  import SetUpSocials from './pages/SetUpSocials';
+  import Login_ from './pages/Login_';
+  import Main_ from './pages/Main_';
+  import Warning from './pages/Warning';
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,8 +31,16 @@ function App() {
           element={<Settings />}
         />
         <Route
-          path="/setupsocials"
-          element={<SetUpSocials />}
+          path="/login_"
+          element={<Login_ />}
+        />
+        <Route
+          path="/main_"
+          element={<Main_ />}
+        />
+        <Route
+          path="/warning"
+          element={<Warning />}
         />
       </Routes>
     </BrowserRouter>

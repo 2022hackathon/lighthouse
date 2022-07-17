@@ -21,15 +21,16 @@ h1 {
 }
 
 .Logo {
-  width: 4em;
-  margin-right: 10px;
+  width: 8em;
+  margin-right: -50px;
 }
 
 .Header {
   display: flex;
   justify-items: center;
   align-items: center;
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 span {
@@ -124,7 +125,66 @@ span {
 .inputBox {
   border-color: rgba(255, 94, 91, 1);
   width: 100%;
-  padding: 20px;
+  padding: 35px;
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+.settingMain {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.settingFontSize {
+  font-size: 30px;
+}
+
+.socialMediaImage {
+  width: 600px;
+  height: 90px;
+}
+
+.socialMediaDropDownMenu {
+  font-size: 20px;
+  height: 35px;
+}
+
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.lighthouse {
+  margin-right: 100px;
+  max-width: 500px;
+  max-height: 1000px;
+}
+
+.settingBox {
+  margin-left: -180px;
+}
+
+.newuserimage {
+  margin-left: 15px;
+  height: 65px;
+  width: 430px;
+}
+
+.newuser {
+  margin-left: 15px;
+}
+
+.warning {
+  margin-left: 400px;
+}
+
+

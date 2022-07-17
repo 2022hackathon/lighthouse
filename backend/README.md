@@ -25,9 +25,9 @@ Given with the optional port parameter (defaults to 8000)
 ```
 source venv/bin/activate
 ```
-2. Run the backend server
+
 ```
-python3 -m uvicorn app.main:app --reload
+python3 -m uvicorn app:app --reload
 ```
 3. Open the browser to view the docs and interact with the server graphically
 ```
